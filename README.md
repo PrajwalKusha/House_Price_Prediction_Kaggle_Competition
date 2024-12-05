@@ -28,9 +28,10 @@ This repository contains a machine learning pipeline for predicting house prices
 
 * **Data Dictionary:**
 
-Name	Modeling Role	Measurement Level	Description
-MSSubClass	Predictor	Categorical	Building class
-LotFrontage	Predictor	Continuous	Lot size in feet
-PropertyAge	Predictor	Continuous	Age of the property at sale
-OverallQual	Predictor	Ordinal	Overall material and finish quality
-SalePrice	Target	Continuous	Sale price of the house
+| Name           | Modeling Role | Measurement Level | Description                             |
+|----------------|---------------|-------------------|-----------------------------------------|
+| MSSubClass     | Predictor     | Categorical       | Building class                          |
+| LotFrontage    | Predictor     | Continuous        | Lot size in feet                        |
+| PropertyAge    | Predictor     | Continuous        | Age of the property at sale             |
+| OverallQual    | Predictor     | Ordinal           | Overall material and finish quality     |
+| SalePrice      | Target        | Continuous        | Sale price of the house                 |
