@@ -58,21 +58,21 @@ This repository contains a machine learning pipeline for predicting house prices
 * **Plots:**
 
 **1. Feature Importance Plot:**
-     * **Description:** The plot ranks the features by their importance in predicting house prices. The top features contributing to the model's accuracy are shown.
-     * **Top Features:** OverallQual, GrLivArea, GarageCars, TotalBsmtSF, 1stFlrSF
-     * **Insights:** The model relies heavily on quality and size-related features to predict the target variable.
+ * **Description:** The plot ranks the features by their importance in predicting house prices. The top features contributing to the model's accuracy are shown.
+ * **Top Features:** OverallQual, GrLivArea, GarageCars, TotalBsmtSF, 1stFlrSF
+ * **Insights:** The model relies heavily on quality and size-related features to predict the target variable.
 
 ![Screenshot 2024-12-08 at 3 41 49 PM](https://github.com/user-attachments/assets/02e46cd3-e7da-4044-b3fa-b5af8e2544cc)
 
 **2. Correlation Heatmap:**
-   * **Description:** The heatmap displays the correlation matrix of numerical features, helping identify multicollinearity and key predictors of SalePrice.
-   * **Insights:** OverallQual, GrLivArea, and TotalBsmtSF are strongly positively correlated with SalePrice, while BsmtUnfSF shows a weaker correlation.
+ * **Description:** The heatmap displays the correlation matrix of numerical features, helping identify multicollinearity and key predictors of SalePrice.
+ * **Insights:** OverallQual, GrLivArea, and TotalBsmtSF are strongly positively correlated with SalePrice, while BsmtUnfSF shows a weaker correlation.
 
 ![Screenshot 2024-12-08 at 3 42 23 PM](https://github.com/user-attachments/assets/69c66588-3c13-4869-b749-20653095f462)
     
 **3. Model Performance Comparison**
-   * **Description:** A bar chart comparing the RMSE scores of the Random Forest and Gradient Boosting models on validation data.
-   * **Insights:** Gradient Boosting performs slightly better than Random Forest, making it the preferred model for predictions.
+ * **Description:** A bar chart comparing the RMSE scores of the Random Forest and Gradient Boosting models on validation data.
+ * **Insights:** Gradient Boosting performs slightly better than Random Forest, making it the preferred model for predictions.
   
 ![Screenshot 2024-12-08 at 3 42 29 PM](https://github.com/user-attachments/assets/d8069ec6-632f-41fc-a4dd-164b79f5dcb8)
 
