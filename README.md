@@ -5,7 +5,7 @@ This repository contains a machine learning pipeline for predicting house prices
 # Basic Information
 * **Group Members:**
    * **Prajwal Kusha - p.kusha@gwmail.gwu.edu**
-   * Manasi Jha -
+   * **Manasi Jha - m.jha@gwmail.gwu.edu**
    * Kumar Tare -
    * Isheneasu -
      
@@ -81,7 +81,8 @@ This repository contains a machine learning pipeline for predicting house prices
      * `learning_rate`: 0.1 (Controls the contribution of each tree to the final prediction).
 
 # Quantitative Analysis
-* **Metrics Used: Root Mean Squared Error (RMSE)**
+* **Metrics Used:**
+  * **Root Mean Squared Error (RMSE):** Measures the average error magnitude between actual and predicted values.
 * **Final Values:**
 
 | Dataset      | RMSE       |
