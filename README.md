@@ -42,3 +42,22 @@ This repository contains a machine learning pipeline for predicting house prices
 
 * **Differences:**
   * The test dataset lacks the `SalePrice` column, which is the target variable in the training dataset.
+
+# Quantitative Analysis
+* **Metrics Used: Root Mean Squared Error (RMSE)**
+* **Final Values:**
+| Dataset      | RMSE       |
+|--------------|------------|
+| Training     | 26348.71   |
+| Validation   | 27897.11   |
+| Test (estimate) | TBD        |
+
+> **Note**: The test RMSE is not included because the true labels (`SalePrice`) for the test dataset are not available in the provided data. Validation RMSE is used as an estimate of the test performance.
+
+* **Plots:**
+1. **Feature Importance Plot:**
+     * **Description:** The plot ranks the features by their importance in predicting house prices. The top features contributing to the model's accuracy are shown.
+     * **Top Features:** OverallQual, GrLivArea, GarageCars, TotalBsmtSF, 1stFlrSF
+     * **Insights:** The model relies heavily on quality and size-related features to predict the target variable.
+2. 
+    
