@@ -56,6 +56,7 @@ This repository contains a machine learning pipeline for predicting house prices
  **Note**: The test RMSE is not included because the true labels (`SalePrice`) for the test dataset are not available in the provided data. Validation RMSE is used as an estimate of the test performance.
 
 * **Plots:**
+
 * **1. Feature Importance Plot:**
      * **Description:** The plot ranks the features by their importance in predicting house prices. The top features contributing to the model's accuracy are shown.
      * **Top Features:** OverallQual, GrLivArea, GarageCars, TotalBsmtSF, 1stFlrSF
@@ -76,6 +77,7 @@ This repository contains a machine learning pipeline for predicting house prices
 ![Screenshot 2024-12-08 at 3 42 29 PM](https://github.com/user-attachments/assets/d8069ec6-632f-41fc-a4dd-164b79f5dcb8)
 
 # Potential Negative Impacts
+
 **1. Math or Software Problems** 
  * **Data Preprocessing Errors:**
   * Incorrect handling of missing data could introduce bias, leading to predictions that are systematically inaccurate for certain types of properties (e.g., properties with missing values in LotFrontage or MasVnrArea).
@@ -86,9 +88,44 @@ This repository contains a machine learning pipeline for predicting house prices
   * Simplistic assumptions in feature engineering (e.g., linear treatment of property age) may overlook complex relationships between features and sale prices.
 
 **2. Real-World Risks**
- * **Discrimination:
-The model may undervalue properties in underrepresented neighborhoods due to insufficient training data, perpetuating existing inequalities in housing markets.
-Features like Neighborhood may act as proxies for socioeconomic status, potentially introducing biases if not handled carefully.
-Financial Risks:
-Overreliance on the model could lead to poor investment or pricing decisions by real estate professionals and buyers, especially in volatile markets.
-High-stakes decisions, such as mortgage approvals, may be unjustly influenced by biased or inaccurate predictions.
+ * **Discrimination:**
+   * The model may undervalue properties in underrepresented neighborhoods due to insufficient training data, perpetuating existing inequalities in housing markets.
+   * Features like Neighborhood may act as proxies for socioeconomic status, potentially introducing biases if not handled carefully.
+
+ * **Financial Risks:**
+   * Overreliance on the model could lead to poor investment or pricing decisions by real estate professionals and buyers, especially in volatile markets.
+   * High-stakes decisions, such as mortgage approvals, may be unjustly influenced by biased or inaccurate predictions.
+  
+# Uncertainities 
+
+**1. Math or Software Problems** 
+ * **Rare Categories:**
+  * Properties with rare categories in features (e.g., unique RoofMatl or Exterior1st values) may have undefined or poorly calibrated predictions if these categories were underrepresented or missing in the training data.
+    
+ * **Impact of Outliers:**
+  * Outliers in the training data (e.g., extremely high SalePrice values) may skew the model, resulting in overpredictions or underpredictions for typical properties.
+
+ * **Feature Drift:**
+  * The test data may exhibit characteristics not present in the training data, leading to decreased model performance. For instance, changes in construction trends (e.g., new roofing materials) could introduce unseen categories.
+
+**2. Real-World Risks**
+ * **Economic Shifts:**
+   * The model does not account for broader macroeconomic factors such as inflation, interest rates, or housing market cycles, which can significantly impact property prices.
+
+ * **Geographic  Generalizability:**
+   * Predictions may not generalize well to regions with fundamentally different housing markets if the training data is geographically localized.
+  
+# Unexpected Results
+
+**1. Rare Features** 
+  * Properties with unusual architectural styles, exceptionally large or small lots, or unique amenities may be inaccurately predicted because such features were underrepresented in the training dataraining data.
+  * Conversely, properties missing critical features (e.g., no GarageArea) may be undervalued if the model overemphasizes these features.
+    
+**2. Interpreting Feature Importance**
+  * Misinterpretation of feature importance by users could lead to undue emphasis on features with spurious correlations (e.g., KitchenQual may seem important but could be influenced by other underlying factors).
+
+**3. Bias in Validation**
+  * If the validation data does not fully represent the diversity of the housing market, the reported RMSE could give an overly optimistic view of the model's performance on real-world data.
+
+
+
