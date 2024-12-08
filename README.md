@@ -38,4 +38,7 @@ This repository contains a machine learning pipeline for predicting house prices
 
 # Test Data:
 * **Source:** Kaggle's **"House Prices: Advanced Regression Techniques" test dataset.**
-* 
+* **Number of Rows:** 1459 rows.
+
+* **Differences:**
+  * The test dataset lacks the `SalePrice` column, which is the target variable in the training dataset.
