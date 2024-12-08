@@ -44,24 +44,24 @@ This repository contains a machine learning pipeline for predicting house prices
   * The test dataset lacks the `SalePrice` column, which is the target variable in the training dataset.
  
 # Model Details:
-* **Columns Used as Inputs in the Final Model**
+1. **Columns Used as Inputs in the Final Model**
  * **Numerical Features:**
    * These features were imputed (for missing values) using the median and scaled appropriately (if required).
    * Examples: `OverallQual`, `GrLivArea`, `GarageCars`, `PropertyAge`, `LotArea`, etc.
    * Features engineered: `PropertyAge`: Derived as `YrSold - YearBuilt`.
 
- * **Categorical Features:**
+ 2. **Categorical Features:**
    * These features were one-hot encoded after imputing missing values with the most frequent category.
    * Examples: `MSZoning`, `Neighborhood`, `BldgType`, `HouseStyle`, `ExterQual`, `KitchenQual`, etc.
 
-* **Columns Used as Targets in the Final Model**
+3. **Columns Used as Targets in the Final Model**
  * **Target Variable:**
    * `SalePrice` (continuous numerical variable): Represents the sale price of the house.
 
-* **Type of Model**
+4. **Type of Model**
   * Gradient Boosting Regressor: A tree-based ensemble model that iteratively trains weak learners (decision trees) and aggregates their predictions to minimize the residual errors.
 
-* **Software used to implement the model:**
+5. **Software used to implement the model:**
   * **Python Programming Language**
   * **Libraries:**
     * `scikit-learn`: For preprocessing, pipeline creation, hyperparameter tuning, and modeling.
@@ -72,7 +72,7 @@ This repository contains a machine learning pipeline for predicting house prices
    * **Python Version: 3.9**
    * **scikit-learn Version: 1.2.2**
 
-* **Hyperparameters**
+6. **Hyperparameters**
  * **Hyperparameter Tuning for Gradient Boosting Regressor:**
    * Used `GridSearchCV` to find the best combination of hyperparameters.
    * Final Hyperparameters:
