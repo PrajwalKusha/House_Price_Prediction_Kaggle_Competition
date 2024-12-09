@@ -12,7 +12,7 @@ This repository contains a machine learning pipeline for predicting house prices
 * **Model Date: Decemeber, 2024**
 * **Model Version: 1.0**
 * **License: MIT** 
-* **Model Implementation Code: house-price-prediction-model.ipynb**
+* **Model Implementation Code: [House_Price_Prediction_Model](https://github.com/PrajwalKusha/House_Price_Prediction/blob/main/house-price-prediction-model.ipynb)**
 
 ## Intended Use:
 * **Intended Uses:** Predict house sale prices based on property features for real estate analysis and market trend predictions.
@@ -27,7 +27,7 @@ This repository contains a machine learning pipeline for predicting house prices
   * **20% validation data**
 
 * **Data Dictionary:**
-
+ 
 | Name           | Modeling Role | Measurement Level | Description                             |
 |----------------|---------------|-------------------|-----------------------------------------|
 | MSSubClass     | Predictor     | Categorical       | Building class                          |
