@@ -9,7 +9,7 @@ This repository contains a machine learning pipeline for predicting house prices
    * **Kumar Jagannath Tare - k.tare@gwu.edu**
    * **Isheanesu Chiworeso - Isheanesuc@gwu.edu**
      
-* **Model Date: Decemeber, 2024**
+* **Model Date: December, 2024**
 * **Model Version: 1.0**
 * **License: MIT** 
 * **Model Implementation Code: [House_Price_Prediction_Model](https://github.com/PrajwalKusha/House_Price_Prediction/blob/main/house-price-prediction-model.ipynb)**
