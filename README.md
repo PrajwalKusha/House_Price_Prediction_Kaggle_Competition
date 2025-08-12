@@ -4,10 +4,8 @@ This repository contains a machine learning pipeline for predicting house prices
 
 # Basic Information
 * **Group Members:**
-   * **Prajwal Kusha - p.kusha@gwmail.gwu.edu**
-   * **Manasi Jha - m.jha@gwmail.gwu.edu**
-   * **Kumar Jagannath Tare - k.tare@gwu.edu**
-   * **Isheanesu Chiworeso - Isheanesuc@gwu.edu**
+   * **Prajwal Kusha - p.kusha@gwu.edu**
+   * **Manasi Jha - m.jha@gwu.edu**
      
 * **Model Date: December, 2024**
 * **Model Version: 1.0**
